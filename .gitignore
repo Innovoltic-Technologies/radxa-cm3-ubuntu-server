@@ -9,3 +9,7 @@ build/work/
 .DS_Store
 .vscode/
 .idea/
+
+# Local GitHub Release image archives
+release/*.img.tar.gz
+release/*.img.tar.gz.sha256
