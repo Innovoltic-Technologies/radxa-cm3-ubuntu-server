@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.0.0 — Documentation Correction
+
+- Document HDMI as physically tested and working.
+- Mark MIPI CSI, MIPI DSI and eDP as not yet tested.
+- Clarify that RK3566 NPU support remains under development.
+- Use PCIe interface validation rather than an AX210-specific PCIe claim in general hardware documentation.
+
 ## v1.0.0 — Initial Release
 
 Initial public release of the Ubuntu Server 26.04.1 ARM64 port for the Radxa CM3 IO Board.

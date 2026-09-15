@@ -34,11 +34,11 @@ The tested debug console uses:
 
 PCIe support is enabled in the CM3 IO device-tree configuration.
 
-The configuration has been physically tested with an Intel AX210 PCIe adapter.
+The PCIe interface has been physically tested on the CM3 IO Board.
 
 ### Wi-Fi
 
-The release contains the Intel AX210 firmware required by the tested adapter.
+The release contains the Intel wireless firmware used during Wi-Fi validation.
 
 Firmware:
 
@@ -47,6 +47,18 @@ Firmware:
 ### USB
 
 USB 2.0 and USB 3.0 functionality has been tested on the target board.
+
+### HDMI
+
+HDMI output has been physically tested and is working.
+
+### Untested Interfaces
+
+The following interfaces have not yet been tested for this release:
+
+- MIPI CSI
+- MIPI DSI
+- eDP
 
 ### Sudo
 
@@ -64,7 +76,7 @@ The image is not presented as a bit-for-bit reproducible build from the reposito
 
 Potential future development includes:
 
-- RK3566 NPU support
+- RK3566 NPU support (under development)
 - Additional hardware validation
 - Kernel/device-tree upstreaming
 - Further reduction and cleanup of the base image

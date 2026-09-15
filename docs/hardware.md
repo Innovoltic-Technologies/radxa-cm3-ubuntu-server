@@ -25,7 +25,11 @@ Configuration:
 
 The CM3 IO PCIe interface is enabled in the supplied device tree.
 
-The configuration was physically validated with an Intel AX210 PCIe adapter. The tested link operated at Gen2 x1.
+The PCIe interface was physically validated on the CM3 IO Board. The tested link operated at Gen2 x1.
+
+### HDMI
+
+HDMI output was physically tested and is working with the v1.0.0 image.
 
 ### USB
 
@@ -40,3 +44,11 @@ The supplied DTB is the exact DTB used by the v1.0.0 reference image.
 ## Hardware Validation
 
 Only interfaces explicitly documented as tested should be considered validated for this release. The absence of a component from the validation list does not imply that the component is unsupported.
+
+### Untested Interfaces
+
+The following interfaces have not yet been tested for this release:
+
+- MIPI CSI
+- MIPI DSI
+- eDP

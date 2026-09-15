@@ -28,9 +28,15 @@ Validated hardware
 ------------------
 UART2
 PCIe Gen2 x1
-Intel AX210
+HDMI
 USB 2.0
 USB 3.0
+
+Untested hardware
+----------------
+MIPI CSI
+MIPI DSI
+eDP
 
 Release image SHA256
 --------------------
@@ -38,6 +44,6 @@ a3d416d10df52ae4bcc14849c8ac9629ab8d88ce1a4cbfb8c039637132272084
 
 Reproducibility
 ---------------
-The v1.0.0 image is a validated reference artifact.
+The v1.0.0 image is a validated reference artifact. RK3566 NPU support remains under development.
 A deterministic bit-for-bit source-to-image build is not provided
 in this release.

@@ -27,7 +27,7 @@ The v1.0.0 reference image has been tested on physical Radxa CM3 IO hardware.
 - 1.5 Mbaud serial console
 - Early UART console
 - PCIe
-- Intel AX210 PCIe Wi-Fi adapter
+- HDMI
 - USB 2.0
 - USB 3.0
 - Classic `sudo` configuration
@@ -62,7 +62,7 @@ The active boot configuration is:
 
 PCIe is enabled in the CM3 IO device-tree configuration.
 
-The configuration has been physically tested using an Intel AX210 PCIe adapter.
+The PCIe interface has been physically tested on the CM3 IO Board.
 
 The tested AX210 firmware is:
 
@@ -172,7 +172,9 @@ Hardware-specific configurations should be tested on real hardware before being 
 
 The following areas are outside the scope of the v1.0.0 stable baseline or remain future work:
 
-- RK3566 NPU integration
+- MIPI CSI, MIPI DSI and eDP interfaces have not yet been tested.
+
+- RK3566 NPU support (under development)
 - Fully automated reproducible image generation
 - Mainline/upstream integration of board-specific changes
 - Broader hardware validation across all CM3 IO peripherals
@@ -185,7 +187,7 @@ Future work may include:
 
 1. Automated image generation
 2. More complete board hardware validation
-3. RK3566 NPU support
+3. RK3566 NPU support (under development)
 4. Additional device-tree improvements
 5. Kernel configuration refinement
 6. Upstreaming applicable board changes
