@@ -1,0 +1,67 @@
+name: Validate repository
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          required=(
+            README.md
+            LICENSE
+            VERSION
+            CHANGELOG.md
+            CONTRIBUTING.md
+            SECURITY.md
+            board/radxa/cm3-io/boot/extlinux.conf
+            board/radxa/cm3-io/dts/rk3566-radxa-cm3-io.dts
+            board/radxa/cm3-io/dts/rk3566-radxa-cm3-io.dtb
+            board/radxa/cm3-io/kernel/config-7.0.0-31-generic
+            release/SHA256SUMS
+            release/MANIFEST.txt
+            release/RELEASE-NOTES.md
+          )
+
+          for file in "${required[@]}"; do
+            test -f "$file" || {
+              echo "Missing required file: $file"
+              exit 1
+            }
+          done
+
+      - name: Validate SHA256 manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha256sum -c manifests/SHA256SUMS
+
+      - name: Validate shell scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if find scripts -type f -name '*.sh' -print -quit | grep -q .; then
+            while IFS= read -r file; do
+              bash -n "$file"
+            done < <(find scripts -type f -name '*.sh')
+          fi
+
+      - name: Validate version
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(cat VERSION)" = "1.0.0"

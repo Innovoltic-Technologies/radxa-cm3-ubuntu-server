@@ -1,0 +1,32 @@
+# v1.0.0 Component Manifest
+
+project: radxa-cm3-ubuntu-server
+release: v1.0.0
+os: Ubuntu 26.04.1 LTS
+architecture: arm64
+board: Radxa CM3 IO
+soc: Rockchip RK3566
+kernel: 7.0.0-31-generic
+boot: U-Boot/extlinux
+
+## Board Files
+
+device-tree: board/radxa/cm3-io/dts/rk3566-radxa-cm3-io.dtb
+device-tree-source: board/radxa/cm3-io/dts/rk3566-radxa-cm3-io.dts
+kernel-config: board/radxa/cm3-io/kernel/config-7.0.0-31-generic
+boot-config: board/radxa/cm3-io/boot/extlinux.conf
+
+## Release Image
+
+image: release/ubuntu-server-26.04.1-radxa-cm3-io-arm64-k7.0.0-31-v1.0.0.img
+image-sha256: a3d416d10df52ae4bcc14849c8ac9629ab8d88ce1a4cbfb8c039637132272084
+
+## Tested Firmware
+
+ax210-firmware: iwlwifi-ty-a0-gf-a0-89.ucode
+ax210-firmware-sha256: 2e2209d3297f98beb1f04ef3ec72c5ebb535bebb1f92d4c1602244fc7c214a45
+
+## Reproducibility
+
+status: reference-image
+bit-for-bit-reproducible: no

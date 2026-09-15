@@ -1,0 +1,39 @@
+# Ubuntu Server 26.04.1 for Radxa CM3 IO — v1.0.0
+
+Release: v1.0.0
+Operating System: Ubuntu 26.04.1 LTS
+Architecture: ARM64
+Board: Radxa CM3 IO
+SoC: Rockchip RK3566
+Kernel: 7.0.0-31-generic
+Boot interface: U-Boot / extlinux
+
+## Board Configuration
+
+Device tree: rk3566-radxa-cm3-io.dtb
+UART console: ttyS2 @ 1500000 baud
+PCIe: enabled and physically validated
+Wi-Fi validation: Intel AX210
+USB validation: USB 2.0 and USB 3.0
+
+## Release Artifact
+
+Image: ubuntu-server-26.04.1-radxa-cm3-io-arm64-k7.0.0-31-v1.0.0.img
+SHA256: a3d416d10df52ae4bcc14849c8ac9629ab8d88ce1a4cbfb8c039637132272084
+
+## Device Tree Artifact
+
+DTB SHA256: 96617b6835e843aa4bee6a41cbe576541ff53eef69d671ce5c55c1847222ae84
+
+## Firmware
+
+Tested Intel AX210 firmware: iwlwifi-ty-a0-gf-a0-89.ucode
+Firmware SHA256: 2e2209d3297f98beb1f04ef3ec72c5ebb535bebb1f92d4c1602244fc7c214a45
+
+## Reproducibility
+
+v1.0.0 is a validated reference image. A deterministic bit-for-bit image build is not yet provided.
+
+## Third-Party Components
+
+Ubuntu, Linux, U-Boot, Radxa software and firmware remain subject to their respective licenses and terms.

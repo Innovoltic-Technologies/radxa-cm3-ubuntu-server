@@ -1,0 +1,43 @@
+Ubuntu Server 26.04.1 for Radxa CM3 IO
+Release: v1.0.0
+
+Release artifacts
+-----------------
+ubuntu-server-26.04.1-radxa-cm3-io-arm64-k7.0.0-31-v1.0.0.img
+ubuntu-server-26.04.1-radxa-cm3-io-arm64-k7.0.0-31-v1.0.0.img.sha256
+SHA256SUMS
+RELEASE-NOTES.md
+
+Board configuration
+-------------------
+board/radxa/cm3-io/boot/extlinux.conf
+board/radxa/cm3-io/dts/rk3566-radxa-cm3-io.dtb
+board/radxa/cm3-io/dts/rk3566-radxa-cm3-io.dts
+board/radxa/cm3-io/kernel/config-7.0.0-31-generic
+
+Platform
+--------
+Operating system: Ubuntu 26.04.1 LTS
+Architecture: ARM64
+Board: Radxa CM3 IO
+SoC: Rockchip RK3566
+Kernel: 7.0.0-31-generic
+Boot: U-Boot / extlinux
+
+Validated hardware
+------------------
+UART2
+PCIe Gen2 x1
+Intel AX210
+USB 2.0
+USB 3.0
+
+Release image SHA256
+--------------------
+a3d416d10df52ae4bcc14849c8ac9629ab8d88ce1a4cbfb8c039637132272084
+
+Reproducibility
+---------------
+The v1.0.0 image is a validated reference artifact.
+A deterministic bit-for-bit source-to-image build is not provided
+in this release.

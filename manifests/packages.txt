@@ -1,0 +1,7 @@
+# Package Manifest
+
+The package manifest records software components associated with the release.
+
+The v1.0.0 image is based on Ubuntu 26.04.1 LTS ARM64. The complete installed-package inventory of the reference image is not currently used as the source of a reproducible build.
+
+Future releases may provide a machine-generated package inventory and package-version lock information.

@@ -1,0 +1,51 @@
+name: Bug report
+description: Report a reproducible problem with the CM3 Ubuntu Server release
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: input
+    id: release
+    attributes:
+      label: Release
+      description: Which project release are you using?
+      placeholder: v1.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware
+      description: Describe the CM3 module, IO board and relevant peripherals.
+      placeholder: Radxa CM3 IO + Intel AX210
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem description
+      description: Clearly describe what happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the exact steps needed to reproduce the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Include relevant dmesg, journalctl or other diagnostic output.
+      render: text
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information

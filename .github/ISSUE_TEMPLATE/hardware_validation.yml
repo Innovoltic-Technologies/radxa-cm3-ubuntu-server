@@ -1,0 +1,49 @@
+name: Hardware validation report
+description: Report testing performed on physical CM3 IO hardware
+title: "[Hardware Test]: "
+labels:
+  - hardware
+body:
+  - type: input
+    id: release
+    attributes:
+      label: Release or commit
+      placeholder: v1.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware
+      placeholder: Radxa CM3 IO
+    validations:
+      required: true
+
+  - type: textarea
+    id: interface
+    attributes:
+      label: Interface tested
+      description: PCIe, USB, UART, I2C, GPIO, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: procedure
+    attributes:
+      label: Test procedure
+    validations:
+      required: true
+
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or evidence
+      render: text

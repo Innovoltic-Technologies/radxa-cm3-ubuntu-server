@@ -1,0 +1,11 @@
+release/*.img
+build/output/
+build/work/
+*.log
+*.tmp
+*~
+*.swp
+*.swo
+.DS_Store
+.vscode/
+.idea/

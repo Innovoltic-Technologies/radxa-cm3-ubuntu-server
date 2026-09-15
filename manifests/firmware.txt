@@ -1,0 +1,12 @@
+# Firmware Manifest
+
+## Tested Intel AX210 Firmware
+
+Filename: iwlwifi-ty-a0-gf-a0-89.ucode
+SHA256: 2e2209d3297f98beb1f04ef3ec72c5ebb535bebb1f92d4c1602244fc7c214a45
+
+This firmware was used during physical AX210 validation.
+
+Firmware remains subject to its upstream copyright and licensing terms.
+
+The release image may contain additional firmware inherited from the Ubuntu base image. This manifest records the firmware specifically relevant to the validated AX210 configuration.

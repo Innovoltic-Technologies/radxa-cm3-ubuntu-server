@@ -1,0 +1,5 @@
+a3d416d10df52ae4bcc14849c8ac9629ab8d88ce1a4cbfb8c039637132272084  release/ubuntu-server-26.04.1-radxa-cm3-io-arm64-k7.0.0-31-v1.0.0.img
+96617b6835e843aa4bee6a41cbe576541ff53eef69d671ce5c55c1847222ae84  board/radxa/cm3-io/dts/rk3566-radxa-cm3-io.dtb
+b91e11caa0b5008071b7183c99ead12286c7c7659545e38c02d1102d98a68013  board/radxa/cm3-io/dts/rk3566-radxa-cm3-io.dts
+6a9c17221e32e1a6f8d43279b31628782345723fad02844029fe0415228674f6  board/radxa/cm3-io/kernel/config-7.0.0-31-generic
+7b6bb0f713b32bff75bc6d38c3732de4c179d6c3e67f34ac5214a65dccfbcfef  board/radxa/cm3-io/boot/extlinux.conf

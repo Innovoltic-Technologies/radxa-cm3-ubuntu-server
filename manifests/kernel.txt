@@ -1,0 +1,9 @@
+# Kernel Manifest
+
+Kernel: Linux 7.0.0-31-generic
+Architecture: ARM64
+Configuration: board/radxa/cm3-io/kernel/config-7.0.0-31-generic
+
+The supplied kernel configuration corresponds to the tested reference image.
+
+v1.0.0 does not provide a deterministic kernel-source-to-binary reproduction workflow.
